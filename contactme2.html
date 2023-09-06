@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Contact Me</title>
+    
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/371c55abc8.js" crossorigin="anonymous"></script>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  
+    <!-- Email Javascript -->
+    <script src="index.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){      emailjs.init("EVWxEYj_EO-49Dkft");
+         })();
+    </script>
+</head>
+
+<body>
+    <div class="container border mt-3 bg-light">
+        <div class="row">
+            <div class="col-md-6 p-5 bg-success text-white"
+                 style="text-align: center;">
+                <h1>Hello there!</h1>
+                <img src="./images/jennifer10.jpg" class="testimonial2-img">      
+                    <p style="color:white">Jennifer.F.Fountain@gmail.com<br>
+                        3187808074<br>
+                        Gulf Shores, AL 36542</p>   
+            </div>
+            <div class="col-md-6 py-3">
+                <h1>Contact Form</h1>
+                <div class="form-group">
+                    <h5 for="name">Name</h5>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name"/>
+                </div>
+                <div class="form-group">
+                    <h5 for="email">E-mail</h5>
+                    <input type="text" class="form-control" id="email" placeholder="Enter your e-mail"/>
+                </div>
+                <div class="form-group">
+                    <h5 for="phonenumber">Phone Number</h5>
+                    <input type="text" class="form-control" id="phonenumber" placeholder="Enter your phone number"/>
+                </div>
+                <div class="form-group">
+                    <h5 for="message">Message</h5>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+                <div class="center">
+                    <button class="btn btn-success" onclick="sendMail()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="social">
+        <span class="spanSpace">
+            <a href="./index.html"><i class="fa-solid btn-outline-dark fa-house fa-2x"></i></a>
+        </span>
+        <span class="spanSpace">
+            <a href="www.facebook.com"><i class="fab btn-outline-dark fa-facebook-f fa-2x"></i></a>
+        </span>
+        <span class="spanSpace">
+            <a href="www.linkedin.com"><i class="fa-brands btn-outline-dark fa-linkedin-in fa-2x"></i></a>
+        </span>
+        <span class="spanSpace">
+            <a href="mailto:Jennifer.F.Fountain@gmail.com"><i class="fas btn-outline-dark fa-envelope fa-2x"></i></a>
+        </span>  
+    </div>
+      <a href="sothearith-iem.github.io/personal">© Copyright 2023 Sigma Omega</a>    
+  </footer>
+
+</html>
